@@ -44,6 +44,7 @@ vim.keymap.set('n', '<Space>fm', flutterTelescope.fvm, {})
 vim.keymap.set('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', { silent = true })
 vim.keymap.set('n', 'K', ':lua vim.lsp.buf.hover()<CR>', { silent = true })
 vim.keymap.set('n', 'C', ':lua vim.lsp.buf.code_action()<CR>', { silent = true })
+vim.keymap.set('n', 'D', ':lua vim.diagnostic.open_float(0, {scope="line"})<CR>', { silent = true })
 -- Set explorer command shortcut
 vim.keymap.set('n', '<Space>fe', ':NvimTreeToggle<CR>', { silent = true })
 
